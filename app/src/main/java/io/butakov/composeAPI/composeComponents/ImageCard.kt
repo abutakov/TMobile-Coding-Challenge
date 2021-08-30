@@ -24,9 +24,12 @@ import androidx.compose.ui.unit.sp
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
-import io.butakov.composeAPI.composeComponents.loadImage
 import io.butakov.composeAPI.model.Card
 
+
+/**
+ * Card to display API response item with 'card_type' = 'image_title_description'
+ */
 @Composable
 fun ImageCard(
     card: Card,
@@ -75,7 +78,9 @@ fun ImageCard(
     }
 }
 
-
+/**
+ * Helper function for ImageCard. Loads an image for a given URL.
+ */
 @SuppressLint("UnrememberedMutableState")
 @Composable
 fun loadImage(imageURL: String): MutableState<Bitmap?> {

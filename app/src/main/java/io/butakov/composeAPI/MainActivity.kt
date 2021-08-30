@@ -21,7 +21,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Better practice is to do it with Dependency Ejection
         viewModel.initViewModel(Repository(CardRetrofitService.cardService))
 
         setContent {
@@ -33,9 +32,7 @@ class MainActivity : ComponentActivity() {
                         "image_title_description" -> ImageCard(card = item, onClick = {})
                         "title_description" -> TitleCard(card = item, onClick = {})
                         "text" -> TextCard(card = item, onClick = {})
-                        else -> {
-                            throw Exception("Invalid card type.")
-                        }
+                        else -> throw Exception("Invalid card type.")
                     }
                 }
             }

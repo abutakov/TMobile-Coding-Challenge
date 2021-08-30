@@ -13,8 +13,7 @@ import kotlinx.coroutines.launch
 
 
 class CardViewModel: ViewModel() {
-    //special observable data structure built for compose
-    //it subscribes to recompose scope, when a composable is rebuilt it will then update any of other compose scopes that use that value
+
     val cards: MutableState<List<Card>> = mutableStateOf(listOf())
 
     fun initViewModel(repository:Repository) {
