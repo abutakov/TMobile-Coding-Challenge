@@ -47,8 +47,9 @@ fun ImageCard(
             .clickable(onClick = onClick)
     ) {
         Box(
-            modifier = Modifier
-                .height((card.card.image.size.height / LocalContext.current.resources.displayMetrics.density).dp)
+
+//            modifier = Modifier
+//                .height((card.card.image.size.height / LocalContext.current.resources.displayMetrics.density).dp)
         ) {
 
             Log.e("ERRORR_RECEIVED", card.card.description.attributes.text_color)
@@ -60,15 +61,16 @@ fun ImageCard(
                 Image(
                     bitmap = it.asImageBitmap(),
                     contentScale = ContentScale.Crop,
-                    contentDescription = card.card.description.value
-
+                    contentDescription = card.card.description.value,
+                    modifier = Modifier
+                        .fillMaxWidth()
                 )
                 Column(
                     Modifier
                         .align(
                             alignment = Alignment.BottomStart
                         )
-                        .padding(16.dp)
+                        .padding(20.dp)
                 ) {
 
                         Text(
@@ -83,8 +85,6 @@ fun ImageCard(
                             color = Color(color = android.graphics.Color.parseColor(card.card.description.attributes.text_color)), //Color.White,
                             fontWeight = Bold
                         )
-
-
                 }
 
             }
