@@ -1,4 +1,4 @@
-package io.butakov.ComposeAPI.ui.theme
+package io.butakov.composeAPI.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

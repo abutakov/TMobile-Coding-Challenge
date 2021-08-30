@@ -1,4 +1,4 @@
-package io.butakov.ComposeAPI.model
+package io.butakov.composeAPI.model
 
 sealed class ResponseType{
     data class Success(val data: List<Card>): ResponseType()

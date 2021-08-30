@@ -1,8 +1,8 @@
-package io.butakov.ComposeAPI.util
+package io.butakov.composeAPI.util
 
 import android.util.Log
-import io.butakov.ComposeAPI.util.Constants.Companion.DEBUG
-import io.butakov.ComposeAPI.util.Constants.Companion.ERROR
+import io.butakov.composeAPI.util.Constants.Companion.DEBUG
+import io.butakov.composeAPI.util.Constants.Companion.ERROR
 
 class Logger {
     companion object{

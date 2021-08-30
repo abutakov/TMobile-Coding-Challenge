@@ -1,8 +1,8 @@
-package io.butakov.ComposeAPI.network
+package io.butakov.composeAPI.network
 
-import io.butakov.ComposeAPI.model.CardResponse
-import io.butakov.ComposeAPI.util.Constants.Companion.EP
-import io.butakov.ComposeAPI.util.Constants.Companion.URL
+import io.butakov.composeAPI.model.CardResponse
+import io.butakov.composeAPI.util.Constants.Companion.EP
+import io.butakov.composeAPI.util.Constants.Companion.URL
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET

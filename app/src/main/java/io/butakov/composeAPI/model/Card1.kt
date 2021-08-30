@@ -1,4 +1,4 @@
-package io.butakov.ComposeAPI.model
+package io.butakov.composeAPI.model
 
 data class Card1(
     val attributes: Attributes,

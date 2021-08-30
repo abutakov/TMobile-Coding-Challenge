@@ -1,4 +1,4 @@
-package io.butakov.ComposeAPI.util
+package io.butakov.composeAPI.util
 
 class Constants {
     companion object{

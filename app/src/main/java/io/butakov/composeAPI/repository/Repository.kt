@@ -1,6 +1,6 @@
-package io.butakov.ComposeAPI.repository
+package io.butakov.composeAPI.repository
 
-import io.butakov.ComposeAPI.network.CardRetrofitService
+import io.butakov.composeAPI.network.CardRetrofitService
 
 open class Repository(val apiService: CardRetrofitService) {
     open suspend fun getCards() = apiService.getCardsAsync()

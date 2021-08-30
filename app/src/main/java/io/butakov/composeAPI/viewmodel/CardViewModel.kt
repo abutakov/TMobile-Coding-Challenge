@@ -1,13 +1,13 @@
-package io.butakov.ComposeAPI.viewmodel
+package io.butakov.composeAPI.viewmodel
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import io.butakov.ComposeAPI.model.Card
-import io.butakov.ComposeAPI.repository.Repository
-import io.butakov.ComposeAPI.util.Logger.Companion.logError
-import io.butakov.ComposeAPI.util.Logger.Companion.logMessage
+import io.butakov.composeAPI.model.Card
+import io.butakov.composeAPI.repository.Repository
+import io.butakov.composeAPI.util.Logger.Companion.logError
+import io.butakov.composeAPI.util.Logger.Companion.logMessage
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

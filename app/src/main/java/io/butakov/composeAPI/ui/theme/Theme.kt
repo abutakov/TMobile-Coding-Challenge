@@ -1,4 +1,4 @@
-package io.butakov.ComposeAPI.ui.theme
+package io.butakov.composeAPI.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

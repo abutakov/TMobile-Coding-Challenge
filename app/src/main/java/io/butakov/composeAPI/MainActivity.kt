@@ -1,4 +1,4 @@
-package io.butakov.ComposeAPI
+package io.butakov.composeAPI
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -6,9 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
-import io.butakov.ComposeAPI.network.CardRetrofitService
-import io.butakov.ComposeAPI.repository.Repository
-import io.butakov.ComposeAPI.viewmodel.CardViewModel
+import io.butakov.composeAPI.network.CardRetrofitService
+import io.butakov.composeAPI.repository.Repository
+import io.butakov.composeAPI.viewmodel.CardViewModel
+import java.lang.Exception
 
 class MainActivity : ComponentActivity() {
 
@@ -25,10 +26,14 @@ class MainActivity : ComponentActivity() {
 
             LazyColumn{
                 itemsIndexed(items = cards){ index, item ->
-                    if(item.card_type == "image_title_description"){
-                        ImageCard(card = item, onClick = {})
-                    } else {
-                        TextCard(card = item, onClick = {})
+
+                    when(item.card_type){
+                        "image_title_description" -> ImageCard(card = item, onClick = {})
+                        "title_description" -> TitleCard(card = item, onClick = {})
+                        "text" -> TextCard(card = item, onClick = {})
+                        else -> {
+                            throw Exception("Invalid card type.")
+                        }
                     }
                 }
             }
