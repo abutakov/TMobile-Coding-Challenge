@@ -10,8 +10,8 @@ A sample REST API that returns a list of pre-defined result:
 
 The API returns a list of view models to be rendered as a list-view.
 
-
 Requirements
+
 These requirements are rather high level and vague. If there are details omitted, it is because we will be happy with any of wide variety of solutions/creativeness. Don’t worry about finding “the” solution. 
 
 DONE - 1.	Query the rest API for receiving the home page response.
@@ -26,8 +26,10 @@ DONE - 5.	The view(s) which have image should set the height dynamically based o
 Ex: Images in the API response can be a rectangle (higher width/ higher height) or square.
 
 DONE - 6.	All image + text models should be rendered with UI hierarchy as below:
-•	Image will take the entire RecyclerView
-•	Texts will be displayed on top of the ImageView beginning from bottom of the RecyclerView
+
+   •	Image will take the entire RecyclerView
+
+   •	Texts will be displayed on top of the ImageView beginning from bottom of the RecyclerView
 
 Example of image+text
 
