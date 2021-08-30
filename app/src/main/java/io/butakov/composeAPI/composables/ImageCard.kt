@@ -1,4 +1,4 @@
-package io.butakov.composeAPI.composeComponents
+package io.butakov.composeAPI.composables
 
 import android.annotation.SuppressLint
 import android.graphics.Bitmap
@@ -6,7 +6,6 @@ import android.graphics.drawable.Drawable
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
@@ -26,7 +25,6 @@ import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
 import io.butakov.composeAPI.model.Card
 
-
 /**
  * Card to display API response item with 'card_type' = 'image_title_description'
  */
@@ -36,10 +34,9 @@ fun ImageCard(
     onClick: () -> Unit,
 ) {
     androidx.compose.material.Card(
-        shape = MaterialTheme.shapes.small,
         modifier = Modifier
             .padding(
-                all = 16.dp
+                all = 12.dp
             )
             .fillMaxSize()
             .clickable(onClick = onClick)
@@ -80,6 +77,8 @@ fun ImageCard(
 
 /**
  * Helper function for ImageCard. Loads an image for a given URL.
+ *
+ * @return MutableState<Bitmap?>
  */
 @SuppressLint("UnrememberedMutableState")
 @Composable

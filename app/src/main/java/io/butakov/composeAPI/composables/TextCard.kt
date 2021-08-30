@@ -1,4 +1,4 @@
-package io.butakov.composeAPI.composeComponents
+package io.butakov.composeAPI.composables
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -24,11 +24,10 @@ fun TextCard(
     androidx.compose.material.Card(
         modifier = Modifier
             .padding(
-                all = 8.dp
+                all = 12.dp
             )
             .clickable(onClick = onClick)
             .fillMaxWidth(),
-        shape = MaterialTheme.shapes.small
     ) {
         Column(
             modifier = Modifier

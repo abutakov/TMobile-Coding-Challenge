@@ -22,7 +22,7 @@ DONE - 3.	The view(s) should dynamically set the height based on the content.
 
 DONE - 4.	All texts in the view(s) should be displayed (no truncation)
 
-VERIFY - 5.	The view(s) which have image should set the height dynamically based on image resolution in the API response.
+DONE - 5.	The view(s) which have image should set the height dynamically based on image resolution in the API response.
 Ex: Images in the API response can be a rectangle (higher width/ higher height) or square.
 
 DONE - 6.	All image + text models should be rendered with UI hierarchy as below:
