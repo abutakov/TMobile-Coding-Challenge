@@ -34,6 +34,7 @@ Example of image+text
  ![alt text](https://i.ibb.co/MVYhsM0/tmobile-img.png)
 
 What is Important
+
 ✔️	Proper functionality, requirements met.
 
 ✔️	Coding should be in Kotlin Programming language
