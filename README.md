@@ -25,6 +25,7 @@ DONE - 6.	All image + text models should be rendered with UI hierarchy as below:
 •	Texts will be displayed on top of the ImageView beginning from bottom of the RecyclerView
 
 Example of image+text
+
  ![alt text](https://i.ibb.co/MVYhsM0/tmobile-img.png)
 
 What is Important
