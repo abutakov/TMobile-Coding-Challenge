@@ -34,19 +34,19 @@ Example of image+text
  ![alt text](https://i.ibb.co/MVYhsM0/tmobile-img.png)
 
 What is Important
-•	Proper functionality, requirements met.
+✔️	Proper functionality, requirements met.
 
-•	Coding should be in Kotlin Programming language
+✔️	Coding should be in Kotlin Programming language
 
-•	Compose UI should be used for constructing UI layers
+✔️	Compose UI should be used for constructing UI layers
 
-•	Well-constructed, easy-to-follow, commented code (especially comment hacks or workarounds made in the interest of expediency (i.e. // given more time I would prefer to wrap this in a blah blah blah pattern blah blah)).
+✔️	Well-constructed, easy-to-follow, commented code (especially comment hacks or workarounds made in the interest of expediency (i.e. // given more time I would prefer to wrap this in a blah blah blah pattern blah blah)).
 
-•	Proper separation of concerns, best-practice coding patterns
+✔️	Proper separation of concerns, best-practice coding patterns
 
-•	View Models Unit test case
+✔️	View Models Unit test case
 
-•	Compose UI instrumentation test case 
+✔️	Compose UI instrumentation test case 
 
 Bonus Points!
 Handle offline mode (when network is not available, if data from previous open instance of app is available use that to render the page)
