@@ -1,6 +1,6 @@
-package com.example.composelist
+package io.butakov.composeAPI
 
-import com.example.composelist.repository.Repository
+import io.butakov.composeAPI.repository.Repository
 
 class TestRepo(apiService: TestNetworkService) : Repository(apiService) {
     override suspend fun getCards() = apiService.getCardsAsync()

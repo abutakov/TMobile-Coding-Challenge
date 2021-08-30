@@ -1,21 +1,21 @@
-package com.example.composelist
+package io.butakov.composeAPI
 
-import com.example.composelist.model.Cards
-import com.example.composelist.network.CardRetrofitService
+import io.butakov.composeAPI.model.CardResponse
+import io.butakov.composeAPI.network.CardRetrofitService
 import com.google.gson.Gson
 import java.lang.Exception
 
 class TestNetworkService : CardRetrofitService {
 
-    lateinit var data: Cards
-    override suspend fun getCardsAsync(): Cards {
+    lateinit var data: CardResponse
+    override suspend fun getCardsAsync(): CardResponse {
 
         val iS = javaClass.classLoader.getResourceAsStream("json_response.json")
         try {
             val byteArray = ByteArray(iS.available())
             iS.read(byteArray)
             val jsonValue = String(byteArray)
-            data = Gson().fromJson<Cards>(jsonValue, Cards::class.java)
+            data = Gson().fromJson<CardResponse>(jsonValue, CardResponse::class.java)
         } catch (e: Exception) {
             println(e.localizedMessage)
         }

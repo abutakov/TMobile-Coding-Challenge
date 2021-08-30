@@ -16,7 +16,7 @@ class CardViewModel: ViewModel() {
 
     val cards: MutableState<List<Card>> = mutableStateOf(listOf())
 
-    fun initViewModel(repository:Repository) {
+    fun initViewModel(repository: Repository) {
         viewModelScope.launch(Dispatchers.IO) {
             try{
                 logMessage("Data received")

@@ -46,7 +46,7 @@ fun ImageCard(
                 Image(
                     bitmap = it.asImageBitmap(),
                     contentScale = ContentScale.Crop,
-                    contentDescription = card.card.description.value,
+                    contentDescription = card.card.title.value,
                     modifier = Modifier
                         .fillMaxWidth()
                 )
