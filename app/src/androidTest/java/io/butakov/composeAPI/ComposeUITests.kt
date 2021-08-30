@@ -13,7 +13,7 @@ import org.junit.Rule
 
 
 @RunWith(AndroidJUnit4::class)
-class ExampleInstrumentedTest {
+class ComposeUITests {
 
     @get:Rule
     val composeTestRule = createAndroidComposeRule<MainActivity>()
@@ -30,7 +30,6 @@ class ExampleInstrumentedTest {
     fun areAllImagesClickable(){
         composeTestRule.onAllNodesWithText("Tap").assertAll(hasClickAction())
     }
-
 
     fun useAppContext() {
         // Context of the app under test.
